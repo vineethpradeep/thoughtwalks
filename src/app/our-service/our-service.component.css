@@ -1,0 +1,13 @@
+.section {
+  width: 100vw;
+}
+.service-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content-block {
+  display: flex;
+  justify-content: center;
+}

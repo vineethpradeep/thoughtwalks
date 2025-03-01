@@ -1,0 +1,46 @@
+.nav-wrapper {
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+.nav-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  color: #444;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.nav-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav li {
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.fixed-nav {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hidden-nav {
+  display: none;
+}

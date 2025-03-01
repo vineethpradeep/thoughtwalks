@@ -1,0 +1,36 @@
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.contact-info {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon i {
+  font-size: 1.2rem;
+}
+
+.contact-des {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.8rem;
+}
+
+.contact-des span {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.contact-des span:last-child {
+  font-weight: 500;
+  color: #1e71b9;
+}

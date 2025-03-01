@@ -1,0 +1,42 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.program-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 3rem auto;
+}
+
+.program-card {
+  width: calc(33.33% - 20px);
+  max-width: 360px;
+  box-sizing: border-box;
+  margin-bottom: 4rem;
+}
+
+.section {
+  margin: 10px 0;
+  padding: 60px 0;
+  overflow: hidden;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.odd {
+  background-color: #f9f9f9;
+}
+
+.even {
+  background-color: #fff;
+}
+
+.section.footer {
+  background-color: #333;
+  margin-bottom: 0;
+  padding: 20px 0;
+}
