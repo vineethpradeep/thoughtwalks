@@ -12,6 +12,7 @@ import { RouterLink } from '@angular/router';
 export class NavbarComponent {
   isFixed: boolean = false;
   scrollPosition: number = 0;
+  isMenuOpen: boolean = false;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -23,5 +24,8 @@ export class NavbarComponent {
     } else {
       this.isFixed = false;
     }
+  }
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
 }

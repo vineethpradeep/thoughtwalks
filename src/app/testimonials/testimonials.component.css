@@ -1,3 +1,15 @@
+@media (max-width: 768px) {
+  .testimonials-wrapper li {
+    width: 100% !important;
+  }
+  .testimonials-wrapper ul {
+    justify-content: center !important;
+  }
+
+  .testimonial-content li::after {
+    border-right: 0px dashed #ddd !important;
+  }
+}
 .testimonials-wrapper {
   display: flex;
   justify-content: center;

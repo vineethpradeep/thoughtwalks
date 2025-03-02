@@ -1,3 +1,11 @@
+@media (max-width: 768px) {
+  .slider-caption {
+    max-width: 300px !important;
+  }
+  .slider-caption h2 {
+    font-size: 2rem !important;
+  }
+}
 #slider {
   width: 100vw;
 }
