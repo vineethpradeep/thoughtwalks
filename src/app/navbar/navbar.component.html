@@ -7,9 +7,24 @@
         </div>
         <div class="nav-left">
           <ul class="nav">
-            <li routerLink="/">Home</li>
-            <li routerLink="/ourService">Service</li>
-            <li routerLink="/ourPrograms">Programs</li>
+            <li
+              [routerLink]="['/']"
+              [ngClass]="{ active: activeRoute === '/' }"
+            >
+              Home
+            </li>
+            <li
+              [routerLink]="['/ourService']"
+              [ngClass]="{ active: activeRoute === '/ourService' }"
+            >
+              Service
+            </li>
+            <li
+              [routerLink]="['/ourPrograms']"
+              [ngClass]="{ active: activeRoute === '/ourPrograms' }"
+            >
+              Programs
+            </li>
           </ul>
         </div>
         <div class="nav-right">
@@ -18,9 +33,27 @@
         </div>
       </div>
       <ul class="mob-nav" [ngClass]="{ open: isMenuOpen }">
-        <li routerLink="/">Home</li>
-        <li routerLink="/ourService">Service</li>
-        <li routerLink="/ourPrograms">Programs</li>
+        <li
+          [routerLink]="['/']"
+          (click)="closeMenu('/')"
+          [ngClass]="{ active: activeRoute === '/' }"
+        >
+          Home
+        </li>
+        <li
+          [routerLink]="['/ourService']"
+          (click)="closeMenu('/ourService')"
+          [ngClass]="{ active: activeRoute === '/ourService' }"
+        >
+          Service
+        </li>
+        <li
+          [routerLink]="['/ourPrograms']"
+          (click)="closeMenu('/ourPrograms')"
+          [ngClass]="{ active: activeRoute === '/ourPrograms' }"
+        >
+          Programs
+        </li>
       </ul>
     </div>
   </div>

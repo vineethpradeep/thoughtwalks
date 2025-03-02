@@ -20,6 +20,11 @@
     overflow: hidden;
     transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
   }
+  .mob-nav li.active,
+  .nav li.active {
+    font-weight: bold;
+    color: #1f72ba;
+  }
 
   .mob-nav.open {
     max-height: 600px;
@@ -94,6 +99,10 @@
   padding: 1rem 1.5rem;
   display: flex;
   align-items: center;
+}
+
+.nav li.active {
+  color: #1f72ba;
 }
 
 .fixed-nav {

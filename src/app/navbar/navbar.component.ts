@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -13,19 +13,28 @@ export class NavbarComponent {
   isFixed: boolean = false;
   scrollPosition: number = 0;
   isMenuOpen: boolean = false;
+  activeRoute: string = '';
+
+  constructor(private router: Router) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.activeRoute = event.urlAfterRedirects;
+      }
+    });
+  }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.scrollPosition = window.scrollY;
-    const scrollPosition = window.scrollY;
-
-    if (scrollPosition > 128) {
-      this.isFixed = true;
-    } else {
-      this.isFixed = false;
-    }
+    this.isFixed = window.scrollY > 128;
   }
+
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu(route: string) {
+    this.activeRoute = route;
+    this.isMenuOpen = false;
   }
 }
