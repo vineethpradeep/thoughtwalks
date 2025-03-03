@@ -1,9 +1,15 @@
 @media (max-width: 768px) {
-  .slider-caption {
-    max-width: 300px !important;
+  .swiper-slider {
+    min-height: 80vh;
   }
+
+  .slider-caption {
+    max-width: 50% !important;
+    padding: 20px;
+  }
+
   .slider-caption h2 {
-    font-size: 2rem !important;
+    font-size: 1.8rem !important;
   }
 }
 #slider {
@@ -15,11 +21,12 @@
   width: 100vw;
   height: 100vh;
   position: absolute;
+  min-height: 100vh;
   margin: 0;
   background-image: inherit;
-  background-position: center center;
+  background-position: center center !important;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover !important;
   overflow: hidden;
   /* transition: background-attachment 0.5s ease-in-out, transform 0.5s ease-in-out; */
 }
