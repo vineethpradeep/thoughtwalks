@@ -106,13 +106,14 @@
 
 .swiper-container {
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .swiper-wrapper {
   display: flex;
-  overflow: hidden;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
-  position: relative;
 }
 
 .swiper-slider.active {
@@ -122,6 +123,7 @@
 }
 
 .swiper-slider:not(.active) {
+  opacity: 0;
   transform: translateX(-100%);
 }
 
