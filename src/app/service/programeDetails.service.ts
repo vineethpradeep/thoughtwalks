@@ -14,13 +14,13 @@ export class ProgrameDetailsService {
       description:
         'Building the user interface and experience of web applications.',
       technologies: [
-        'React',
-        'Angular',
-        'Vue.js',
         'HTML',
         'CSS',
         'JavaScript',
         'TypeScript',
+         'React',
+        'Angular',
+        'Vue.js',
       ],
       useCases: [
         'Web apps',
@@ -101,11 +101,9 @@ export class ProgrameDetailsService {
       description:
         'Handling business logic, authentication, and APIs for web applications.',
       technologies: [
+        '.Net Csharp',
         'Node.js',
-        'Express.js',
-        'Django',
-        'Spring Boot',
-        'FastAPI',
+        'WEB API',
         'Ruby on Rails',
       ],
       useCases: [

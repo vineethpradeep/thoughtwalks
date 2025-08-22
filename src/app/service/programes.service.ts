@@ -12,14 +12,12 @@ export class ProgramesService {
       name: 'Frontend Development',
       description:
         'Building the user interface and experience of web applications.',
-      technologies: [
-        'React',
-        'Angular',
-        'Vue.js',
+      technologies: [     
         'HTML',
         'CSS',
         'JavaScript',
         'TypeScript',
+        'Angular',
       ],
       useCases: [
         'Web apps',
@@ -27,7 +25,7 @@ export class ProgramesService {
         'Dashboards',
         'Single Page Applications (SPA)',
       ],
-      duration: '6',
+      duration: '2',
       faIcon: 'tv',
     },
     {
@@ -36,12 +34,8 @@ export class ProgramesService {
       description:
         'Handling business logic, authentication, APIs, and database interactions.',
       technologies: [
-        'Node.js',
-        'Express.js',
-        'Django',
-        'Spring Boot',
-        'Ruby on Rails',
-        'FastAPI',
+        '.Net CSharp',
+        '.Net Web API',     
       ],
       useCases: [
         'REST APIs',
@@ -49,7 +43,7 @@ export class ProgramesService {
         'Microservices',
         'Data Processing',
       ],
-      duration: '7',
+      duration: '2',
       faIcon: 'server',
     },
     {
@@ -58,12 +52,9 @@ export class ProgramesService {
       description:
         'Storing and managing structured or unstructured data efficiently.',
       technologies: [
-        'PostgreSQL',
-        'MySQL',
+        'SQL',
         'MongoDB',
         'Redis',
-        'Firebase',
-        'Cassandra',
       ],
       useCases: [
         'Data storage',
@@ -71,75 +62,31 @@ export class ProgramesService {
         'Big Data',
         'Analytics',
       ],
-      duration: '5',
+      duration: '2',
       faIcon: 'database',
     },
-    {
-      id: 4,
-      name: 'DevOps',
+      {
+      id: 8,
+      name: '.NET Fullstack Development',
       description:
-        'Automating software development, deployment, and infrastructure management.',
+        'Building enterprise-level applications and APIs using the .NET ecosystem.',
       technologies: [
-        'Docker',
-        'Kubernetes',
-        'Jenkins',
-        'GitHub Actions',
-        'Terraform',
-        'AWS',
-        'Azure',
+        '.NET Core',
+        'C#',
+        'ASP.NET',
+        'Entity Framework',
+        'Blazor',
       ],
       useCases: [
-        'CI/CD Pipelines',
-        'Infrastructure as Code',
-        'Cloud Deployment',
-        'Monitoring & Logging',
+        'Enterprise Web Apps',
+        'APIs',
+        'Cloud Applications',
+        'Windows Applications',
       ],
-      duration: '8',
-      faIcon: 'terminal',
+      duration: '2',
+      faIcon: 'hard-drive',
     },
-    {
-      id: 5,
-      name: 'Mobile App Development',
-      description:
-        'Creating mobile applications for Android and iOS platforms.',
-      technologies: [
-        'Flutter',
-        'React Native',
-        'Swift',
-        'Kotlin',
-        'Jetpack Compose',
-      ],
-      useCases: [
-        'Social Media Apps',
-        'E-commerce Apps',
-        'Streaming Apps',
-        'On-demand Services',
-      ],
-      duration: '6',
-      faIcon: 'mobile-screen',
-    },
-    {
-      id: 6,
-      name: 'Generative AI',
-      description:
-        'AI models that generate text, images, code, and other content.',
-      technologies: [
-        'GPT-4',
-        'DALL·E',
-        'Stable Diffusion',
-        'TensorFlow',
-        'PyTorch',
-      ],
-      useCases: [
-        'AI Chatbots',
-        'Image Generation',
-        'Content Writing',
-        'Code Generation',
-      ],
-      duration: '9',
-      faIcon: 'microchip',
-    },
-    {
+     {
       id: 7,
       name: 'Python & AI',
       description:
@@ -162,41 +109,88 @@ export class ProgramesService {
       faIcon: 'python',
     },
     {
-      id: 8,
-      name: '.NET Development',
+      id: 4,
+      name: 'DevOps',
       description:
-        'Building enterprise-level applications and APIs using the .NET ecosystem.',
+        'Automating software development, deployment, and infrastructure management.',
       technologies: [
-        '.NET Core',
-        'C#',
-        'ASP.NET',
-        'Entity Framework',
-        'Blazor',
+        'Docker',
+        'Kubernetes',
+        'Jenkins',
+        'GitHub Actions',
+        'Terraform',
+        'AWS',
+        'Azure',
       ],
       useCases: [
-        'Enterprise Web Apps',
-        'APIs',
-        'Cloud Applications',
-        'Windows Applications',
+        'CI/CD Pipelines',
+        'Infrastructure as Code',
+        'Cloud Deployment',
+        'Monitoring & Logging',
       ],
-      duration: '6',
-      faIcon: 'hard-drive',
+      duration: '1',
+      faIcon: 'terminal',
     },
-    {
-      id: 9,
-      name: 'Machine-Level Programming',
-      description:
-        'Low-level programming for performance-critical applications.',
-      technologies: ['C', 'C++', 'Rust', 'Assembly', 'Embedded C'],
-      useCases: [
-        'Embedded Systems',
-        'Operating Systems',
-        'Game Engines',
-        'High-Performance Computing',
-      ],
-      duration: '10',
-      faIcon: 'laptop-code',
-    },
+  
+    // {
+    //   id: 5,
+    //   name: 'Mobile App Development',
+    //   description:
+    //     'Creating mobile applications for Android and iOS platforms.',
+    //   technologies: [
+    //     'Flutter',
+    //     'React Native',
+    //     'Swift',
+    //     'Kotlin',
+    //     'Jetpack Compose',
+    //   ],
+    //   useCases: [
+    //     'Social Media Apps',
+    //     'E-commerce Apps',
+    //     'Streaming Apps',
+    //     'On-demand Services',
+    //   ],
+    //   duration: '6',
+    //   faIcon: 'mobile-screen',
+    // },
+    // {
+    //   id: 6,
+    //   name: 'Generative AI',
+    //   description:
+    //     'AI models that generate text, images, code, and other content.',
+    //   technologies: [
+    //     'GPT-4',
+    //     'DALL·E',
+    //     'Stable Diffusion',
+    //     'TensorFlow',
+    //     'PyTorch',
+    //   ],
+    //   useCases: [
+    //     'AI Chatbots',
+    //     'Image Generation',
+    //     'Content Writing',
+    //     'Code Generation',
+    //   ],
+    //   duration: '9',
+    //   faIcon: 'microchip',
+    // },
+   
+    
+    // {
+    //   id: 9,
+    //   name: 'Machine-Level Programming',
+    //   description:
+    //     'Low-level programming for performance-critical applications.',
+    //   technologies: ['C', 'C++', 'Rust', 'Assembly', 'Embedded C'],
+    //   useCases: [
+    //     'Embedded Systems',
+    //     'Operating Systems',
+    //     'Game Engines',
+    //     'High-Performance Computing',
+    //   ],
+    //   duration: '10',
+    //   faIcon: 'laptop-code',
+    // },
   ];
 
   getProgrames() {

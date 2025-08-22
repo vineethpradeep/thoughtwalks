@@ -10,13 +10,13 @@ export class UserDataService {
     {
       id: 1,
       name: 'Drop a mail',
-      desc: 'info@thoughtwalks.com',
+      desc: 'thoughtwalks.net@gmail.com',
       icon: 'envelope',
     },
     {
       id: 2,
       name: 'Get in touch',
-      desc: '1800-1144-551',
+      desc: '91-6383682583',
       icon: 'phone',
     },
   ];
