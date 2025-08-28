@@ -1,0 +1,27 @@
+.card {
+    border-radius: 12px;
+}
+
+.list-group-item {
+    border: none;
+    padding-left: 0;
+}
+
+.course-detail-area h5 {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.course-detail-area a {
+    color: var(--color-st-primary) !important;
+}
+
+.course-detail-area .badge {
+    background-color: var(--color-theme);
+}
+
+.accordion-item>.accordion-header .accordion-button {
+    font-size: 1.6rem;
+}

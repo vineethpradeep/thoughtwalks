@@ -1,0 +1,41 @@
+<div class="topic-area section-padding40">
+  <div class="container">
+    <!-- Section Title -->
+    <div class="row justify-content-center">
+      <div class="col-xl-7 col-lg-8">
+        <div class="section-tittle text-center mb-55">
+          <h2>Explore top subjects</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Topics Grid -->
+    <div class="row g-4">
+      @for (topic of topics; track topic) {
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div
+          class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5"
+        >
+          <div>
+            <!-- Font Awesome Icon instead of SVG -->
+            <span class="icon mb-4">
+              <i class="{{ topic.icon }} fa-3x"></i>
+            </span>
+            <h3 class="fs-5 mb-3">{{ topic.title }}</h3>
+            <p class="mb-4">{{ topic.description }}</p>
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+
+    <!-- View More Button -->
+    <div class="row justify-content-center">
+      <div class="col-xl-12">
+        <div class="section-tittle text-center mt-20">
+          <a routerLink="/courses" class="border-btn">View More Subjects</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

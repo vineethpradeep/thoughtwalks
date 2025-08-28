@@ -1,0 +1,20 @@
+<app-inner-page-header
+  [title]="'Our Courses'"
+  [breadcrumbs]="[
+    { label: 'Home', url: '/' },
+    { label: 'Courses', url: '/courses' }
+  ]"
+></app-inner-page-header>
+<section class="courses-page">
+  <div class="container">
+    <app-featured-courses></app-featured-courses>
+    <div class="row justify-content-center">
+      <div class="col-xl-12">
+        <div class="section-tittle text-center mt-20">
+          <a routerLink="/courses" class="border-btn">Load More Subjects</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-topics></app-topics>
+</section>

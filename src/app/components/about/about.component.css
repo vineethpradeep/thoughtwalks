@@ -1,0 +1,19 @@
+/* Play Button Style */
+.btn-play {
+    width: 70px;
+    height: 70px;
+    background: var(--color-theme, #C86FFF);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.btn-play:hover {
+    background: #a53fd4;
+    /* darker shade of theme */
+    transform: scale(1.1);
+    color: #fff;
+}

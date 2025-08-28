@@ -1,12 +1,7 @@
-<div id="wrapper">
-  <div class="content">
-    <div class="container">
-      <div class="nav-wrapper">
-        <!-- <app-topbar></app-topbar> -->
-        <app-nav-header></app-nav-header>
-        <app-navbar></app-navbar>
-      </div>
-    </div>
-    <router-outlet />
-  </div>
-</div>
+<main>
+  <app-preloader></app-preloader>
+  <app-header></app-header>
+  <router-outlet />
+  <app-footer></app-footer>
+  <app-back-to-top></app-back-to-top>
+</main>

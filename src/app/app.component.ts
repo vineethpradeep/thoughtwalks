@@ -1,12 +1,20 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './navbar/navbar.component';
-import { TopbarComponent } from './topbar/topbar.component';
-import { NavHeaderComponent } from './nav-header/nav-header.component';
+import { PreloaderComponent } from './components/preloader/preloader.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { BackToTopComponent } from './components/back-to-top/back-to-top.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarComponent, TopbarComponent, NavHeaderComponent],
+  standalone: true,
+  imports: [
+    RouterOutlet,
+    PreloaderComponent,
+    HeaderComponent,
+    FooterComponent,
+    BackToTopComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

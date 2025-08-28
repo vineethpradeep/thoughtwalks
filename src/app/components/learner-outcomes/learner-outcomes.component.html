@@ -1,0 +1,39 @@
+<section class="about-area3 fix py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Right Content (Image) -->
+      <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+        <div class="right-img text-center">
+          <img
+            src="assets/img/gallery/about3.png"
+            alt="Learner Outcomes"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+
+      <!-- Left Content (Features) -->
+      <div class="col-lg-6 order-lg-1">
+        <!-- Section Title -->
+        <div class="section-tittle section-tittle2 mb-4">
+          <div class="front-text">
+            <h2>Learner outcomes on courses you will take</h2>
+          </div>
+        </div>
+
+        <!-- Features List -->
+        <div
+          *ngFor="let feature of features"
+          class="single-features d-flex align-items-start mb-3"
+        >
+          <div class="features-icon me-3">
+            <img src="assets/img/icon/right-icon.svg" alt="Feature Icon" />
+          </div>
+          <div class="features-caption">
+            <p>{{ feature }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
