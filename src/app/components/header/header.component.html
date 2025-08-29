@@ -6,7 +6,7 @@
         <div class="container-fluid">
           <div class="row align-items-center">
             <!-- Logo -->
-            <div class="col-xl-2 col-lg-2">
+            <div class="col-xl-2 col-lg-2 col-6">
               <div class="logo">
                 <a routerLink="/">
                   <img
@@ -19,13 +19,13 @@
             </div>
 
             <!-- Navigation -->
-            <div class="col-xl-10 col-lg-10">
+            <div class="col-xl-10 col-lg-10 d-none d-lg-block">
               <div
                 class="menu-wrapper d-flex align-items-center justify-content-end"
               >
-                <div class="main-menu d-none d-lg-block">
+                <div class="main-menu">
                   <nav>
-                    <ul id="navigation">
+                    <ul id="navigation" class="d-flex align-items-center">
                       <li
                         routerLinkActive="active"
                         [routerLinkActiveOptions]="{ exact: true }"
@@ -38,20 +38,6 @@
                       <li routerLinkActive="active">
                         <a routerLink="#">About</a>
                       </li>
-                      <!-- <li>
-                        <a href="#">Blog</a>
-                        <ul class="submenu">
-                          <li routerLinkActive="active">
-                            <a routerLink="/blog">Blog</a>
-                          </li>
-                          <li routerLinkActive="active">
-                            <a routerLink="/blog-details">Blog Details</a>
-                          </li>
-                          <li routerLinkActive="active">
-                            <a routerLink="/elements">Element</a>
-                          </li>
-                        </ul>
-                      </li> -->
                       <li routerLinkActive="active">
                         <a routerLink="#">Contact</a>
                       </li>
@@ -68,8 +54,43 @@
             </div>
 
             <!-- Mobile Menu -->
-            <div class="col-12">
-              <div class="mobile_menu d-block d-lg-none"></div>
+            <div class="col-6 d-block d-lg-none text-end">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mobileMenu"
+                aria-controls="mobileMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+            <div class="col-12 d-lg-none">
+              <div class="collapse mobile_menu mt-5" id="mobileMenu">
+                <ul class="navbar-nav text-center">
+                  <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" routerLink="/">Home</a>
+                  </li>
+                  <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" routerLink="/courses">Courses</a>
+                  </li>
+                  <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" routerLink="#">About</a>
+                  </li>
+                  <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" routerLink="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn d-block my-2" routerLink="#">Join</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn3 d-block" routerLink="#">Log in</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

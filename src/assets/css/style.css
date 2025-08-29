@@ -3705,51 +3705,6 @@ hr {
     color: var(--color-orange)
 }
 
-.courses-actives {
-    display: flex;
-}
-
-.courses-actives button.slick-arrow {
-    position: absolute;
-    border: 0;
-    padding: 0;
-    z-index: 2;
-    cursor: pointer;
-    top: 50%;
-    transform: translateY(-50%);
-    left: auto;
-    background: none
-}
-
-.courses-actives button.slick-arrow i {
-    font-size: 20px;
-    color: var(--color-theme);
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
-    -o-transition: .2s;
-    transition: .2s
-}
-
-.courses-actives button.slick-arrow i:hover {
-    color: var(--color-st-primary)
-}
-
-.courses-actives button.slick-prev {
-    left: -58px
-}
-
-.courses-actives button.slick-prev i {
-    color: #ddd
-}
-
-.courses-actives button.slick-next {
-    right: -58px
-}
-
-.courses-actives button.slick-next i {
-    color: #ddd
-}
-
 .single-features {
     display: flex
 }

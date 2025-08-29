@@ -63,6 +63,9 @@ export class FeaturedCoursesComponent {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 3000,
+    speed: 600,
+    cssEase: 'ease-in-out',
+    pauseOnHover: true,
     dots: true,
     arrows: true,
     responsive: [
