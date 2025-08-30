@@ -42,7 +42,9 @@
                     {{ course.reviews }}
                   </p>
                 </div>
-                <div class="price fw-bold">${{ course.price }}</div>
+                <div class="price fw-bold">
+                  {{ course.price ? "$" + course.price : "" }}
+                </div>
               </div>
               <a
                 href="/courses/{{ course.id }}"

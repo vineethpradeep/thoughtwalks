@@ -25,7 +25,7 @@ export class CourseDetailComponent implements OnInit {
         'The automated process all your website tasks. Discover tools and techniques.',
       rating: 4.5,
       reviews: 120,
-      price: 135,
+      price: 0,
     },
     {
       id: 2,
@@ -35,7 +35,7 @@ export class CourseDetailComponent implements OnInit {
       description: 'Learn modern frontend frameworks with hands-on projects.',
       rating: 4.7,
       reviews: 210,
-      price: 199,
+      price: 0,
     },
     {
       id: 3,
@@ -46,7 +46,7 @@ export class CourseDetailComponent implements OnInit {
         'Build robust backend systems with Node.js, Express, and MongoDB.',
       rating: 4.6,
       reviews: 180,
-      price: 175,
+      price: 0,
     },
   ];
 

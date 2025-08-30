@@ -42,7 +42,7 @@
               course?.reviews
             }}
             reviews) <br />
-            <strong>${{ course?.price }}</strong>
+            <strong> {{ course.price ? "$" + course.price : "" }}</strong>
           </p>
 
           <hr />

@@ -20,7 +20,7 @@ export class FeaturedCoursesComponent {
         'Learn to build responsive and interactive web interfaces using HTML, CSS, JavaScript, Angular, React, and Vue.js.',
       rating: 4.8,
       reviews: 150,
-      price: 200,
+      price: 0,
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ export class FeaturedCoursesComponent {
         'Master server-side programming, API integration, authentication, and database handling using Node.js, .NET, and Python.',
       rating: 4.7,
       reviews: 120,
-      price: 220,
+      price: 0,
     },
     {
       id: 3,
@@ -42,7 +42,7 @@ export class FeaturedCoursesComponent {
         'Understand SQL & NoSQL databases, data modeling, efficient storage techniques for real-world applications.',
       rating: 4.6,
       reviews: 95,
-      price: 180,
+      price: 0,
     },
     {
       id: 4,
@@ -53,7 +53,7 @@ export class FeaturedCoursesComponent {
         'Build enterprise-level applications using the .NET ecosystem, integrating frontend and backend with real-time projects.',
       rating: 4.9,
       reviews: 130,
-      price: 250,
+      price: 0,
     },
   ];
 
