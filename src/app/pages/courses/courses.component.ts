@@ -14,6 +14,4 @@ import { TopicsComponent } from '../../components/topics/topics.component';
   templateUrl: './courses.component.html',
   styleUrls: ['./courses.component.css'],
 })
-export class CoursesComponent {
-  // Optional: you can pass extra courses if you want
-}
+export class CoursesComponent {}

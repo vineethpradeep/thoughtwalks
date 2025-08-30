@@ -1,1 +1,118 @@
-<p>contact works!</p>
+<app-inner-page-header
+  [title]="'Contact Us'"
+  [breadcrumbs]="[
+    { label: 'Home', url: '/' },
+    { label: 'Contact', url: '/contact' }
+  ]"
+></app-inner-page-header>
+<section class="contact-section py-5">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-12 text-center">
+        <h2 class="contact-title mb-3">Get in Touch</h2>
+        <p class="text-muted">
+          We'd love to hear from you. Send us a message or visit us at our
+          office.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-lg-8">
+        <form
+          [formGroup]="contactForm"
+          (ngSubmit)="onSubmit()"
+          class="p-4 border rounded shadow-sm bg-white"
+          novalidate
+        >
+          <div class="row g-3">
+            <div class="col-12">
+              <div class="form-group mb-3">
+                <textarea
+                  class="form-control p-3"
+                  formControlName="message"
+                  rows="6"
+                  placeholder="Enter Message"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="form-group mb-3">
+                <input
+                  class="form-control p-3"
+                  type="text"
+                  formControlName="name"
+                  placeholder="Enter your name"
+                />
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="form-group mb-3">
+                <input
+                  class="form-control p-3"
+                  type="email"
+                  formControlName="email"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-group mb-3">
+                <input
+                  class="form-control p-3"
+                  type="text"
+                  formControlName="subject"
+                  placeholder="Enter Subject"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <button
+              type="submit"
+              class="btn btn-primary px-5 py-2"
+              [disabled]="contactForm.invalid"
+            >
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-4">
+        <div class="p-4 bg-light border rounded shadow-sm mb-4">
+          <h5 class="mb-3 display-6">Our Office</h5>
+          <p class="mb-1 fw-bold">4, Ambiga Nagar, 1st Floor</p>
+          <p class="mb-1">Alpha, Cheran Colony, Thudiyalur</p>
+          <p class="mb-1">Kurudampalayam, Tamil Nadu - 641034</p>
+        </div>
+
+        <div class="p-4 bg-light border rounded shadow-sm mb-4">
+          <h5 class="mb-3 display-6">Contact Info</h5>
+          <p><i class="ti-tablet me-2"></i> +1 253 565 2365</p>
+          <p><i class="ti-email me-2"></i> support&#64;colorlib.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="ratio ratio-16x9 shadow-sm rounded overflow-hidden">
+          <div class="ratio ratio-16x9 shadow-sm rounded overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps?q=1st+Floor,+Alpha,+4,+Ambiga+Nagar,+Cheran+Colony,+Thudiyalur,+Tamil+Nadu+641034,+India&output=embed"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

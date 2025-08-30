@@ -12,8 +12,8 @@ import { RouterModule } from '@angular/router';
 export class InnerPageHeaderComponent {
   @Input() title: string = 'Page Title';
 
-  // Accept an array of breadcrumb items
   @Input() breadcrumbs: { label: string; url?: string }[] = [
     { label: 'Home', url: '/' },
+    { label: 'Contact', url: '/contact' },
   ];
 }
