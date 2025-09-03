@@ -22,7 +22,11 @@ export class CourseDetailComponent implements OnInit {
       category: 'User Experience',
       title: 'Fundamental of UX for Application design',
       description:
-        'The automated process all your website tasks. Discover tools and techniques.',
+           ['HTML: Complete document structure, Essential elements, Forms, and semantic markup with real code examples',
+           'CSS: Box model, flexbox, grid, positioning, responsive design with real code examples',
+            'JavaScript: Variables, functions, arrays, objects, DOM manipulation with real code examples',
+             'Bootstrap: Grid system, components, utilities, and responsive classes', 
+             'Angular: Components, services, routing, forms, and CLI commands with TypeScript examples'],
       rating: 4.5,
       reviews: 120,
       price: 0,
@@ -31,8 +35,15 @@ export class CourseDetailComponent implements OnInit {
       id: 2,
       image: 'assets/img/gallery/featured2.png',
       category: 'Frontend Development',
-      title: 'Mastering React & Angular',
-      description: 'Learn modern frontend frameworks with hands-on projects.',
+      title: 'Middleware & Backend Development',
+     description:['Mastering the Basics of C#',
+
+        'Working with Control Flow & Data Handling',
+
+        'Exploring Object-Oriented Programming',
+
+        'Building .NET Web API and Connect DB with EF Core'
+],
       rating: 4.7,
       reviews: 210,
       price: 0,
@@ -41,9 +52,36 @@ export class CourseDetailComponent implements OnInit {
       id: 3,
       image: 'assets/img/gallery/featured3.png',
       category: 'Backend Development',
-      title: 'Node.js & Express Bootcamp',
-      description:
-        'Build robust backend systems with Node.js, Express, and MongoDB.',
+      title: 'SQL Database Design & Management',
+      description:['Database,Table,Rows,Columns & Data Types,Constraints (Primary Key, Foreign Key, Unique, Not Null, Check, Default)',
+
+        'Basic SQL Commands (CRUD) - CREATE, ALTER, DROP (DDL), INSERT, UPDATE, DELETE (DML) , SELECT (DQL)',
+
+        'Filtering & Sorting Data - WHERE clause ORDER BY DISTINCT LIMIT / TOP',
+
+        'Joins & Relationships - INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN',
+
+        'Aggregate Functions & Grouping - COUNT(), SUM(), AVG(), MIN(), MAX() GROUP BY HAVING'
+      ],
+      rating: 4.6,
+      reviews: 180,
+      price: 0,
+    },
+     {
+      id: 4,
+      image: 'assets/img/gallery/featured4.png',
+      category: '.NET Fullstack Development',
+      title: '.NET Fullstack Development',
+     description:['Create Booking System using Angular Framework',
+
+        'Create Middleware Microservice for Booking System',
+
+        'Create Database Design for Booking System',
+
+        'Initialize Git in both Angular app & .NET API.',
+
+        'Deploy the App in Azure & Integrate Azure AI Services'
+],
       rating: 4.6,
       reviews: 180,
       price: 0,
