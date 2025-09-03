@@ -13,7 +13,22 @@ export class TeamComponent {
     {
       name: 'Mr. Sabarimalai',
       image: 'assets/img/gallery/team1.png',
-      description: 'Full Stack Developer and Lead Instructor',
+      description: '.Net Full Stack Developer',
+    },
+     {
+      name: 'Mr. GaneshPremanath',
+      image: 'assets/img/gallery/team1.png',
+      description: '.Net Full Stack Developer',
+    },
+     {
+      name: 'Mr. Vineeth',
+      image: 'assets/img/gallery/team1.png',
+      description: 'Design Architect',
+    },
+     {
+      name: 'Mr. RajaManikkam',
+      image: 'assets/img/gallery/team1.png',
+      description: 'Software Architect',
     },
   ];
 }
