@@ -1,27 +1,39 @@
-.card {
-    border-radius: 12px;
+.course-desc-list {
+  max-width: 750px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: left;
 }
 
-.list-group-item {
-    border: none;
-    padding-left: 0;
+.course-desc-list li {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 12px 18px;
+  margin-bottom: 12px;
+  font-size: 1.6rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.course-detail-area h5 {
-    font-size: 20px;
-    line-height: 1.2;
-    margin-bottom: 10px;
-    font-weight: 700;
+.course-desc-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.course-detail-area a {
-    color: var(--color-st-primary) !important;
+.explore-btn {
+  background: linear-gradient(90deg, #a855f7, #ec4899);
+  border: none;
+  border-radius: 10px;
+  color: #fff !important;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: transform 0.2s ease;
 }
 
-.course-detail-area .badge {
-    background-color: var(--color-theme);
-}
-
-.accordion-item>.accordion-header .accordion-button {
-    font-size: 1.6rem;
+.explore-btn:hover {
+  transform: scale(1.05);
 }
