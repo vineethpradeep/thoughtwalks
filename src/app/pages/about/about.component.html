@@ -1,1 +1,28 @@
-<p>about works!</p>
+<app-inner-page-header
+  [title]="'About Us'"
+  [breadcrumbs]="[
+    { label: 'Home', url: '/' },
+    { label: 'About', url: '/about' }
+  ]"
+></app-inner-page-header>
+<section class="bg-light text-center py-5">
+<div class="container">
+<h2 class="fw-bold">About Us</h2>
+<p class="text-muted">
+We are a collective of seasoned professionals, each with over 12 years of industry experience. Our team is built on a foundation of specialized expertise, ensuring that every layer of your project is handled by a dedicated professional.
+</p>
+<h4 class="fw-bold mt-4">Our Expertise</h4>
+<p class="text-muted">
+We offer full-stack development with specialists in every layer, including:
+</p>
+<ul class="list-unstyled text-muted d-flex flex-wrap justify-content-center">
+<li class="mx-3">Design Architecture</li>
+<li class="mx-3">Software Architecture</li>
+<li class="mx-3">Database Architecture</li>
+<li class="mx-3">AI Services</li>
+<li class="mx-3">DevOps</li>
+</ul>
+<a href="/courses" class="btn btn-primary btn-lg mt-3">Explore Our Services</a>
+</div>
+</section>
+
