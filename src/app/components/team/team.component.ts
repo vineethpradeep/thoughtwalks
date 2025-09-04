@@ -11,12 +11,12 @@ import { CommonModule } from '@angular/common';
 export class TeamComponent {
   teamMembers = [
     {
-      name: 'Mr. Sabarimalai',
+      name: 'Mr. Sabarimalai Alagar',
       image: 'assets/img/gallery/team1.png',
       description: '.Net Full Stack Developer',
     },
      {
-      name: 'Mr. GaneshPremanath',
+      name: 'Mr. GaneshPremnath',
       image: 'assets/img/gallery/team1.png',
       description: '.Net Full Stack Developer',
     },
