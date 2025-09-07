@@ -16,6 +16,11 @@ export class TeamComponent {
       description: '.Net Full Stack Developer',
     },
     {
+      name: 'Karthik Elango',
+      image: 'assets/img/gallery/karthik.png',
+      description: 'Cloud Architect',
+    },
+    {
       name: 'GaneshPremnath',
       image: 'assets/img/gallery/ganesh.png',
       description: '.Net Full Stack Developer',
