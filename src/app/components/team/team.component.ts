@@ -21,17 +21,17 @@ export class TeamComponent {
       description: 'Cloud Architect',
     },
     {
-      name: 'GaneshPremnath',
+      name: 'Ganesh Premnath',
       image: 'assets/img/gallery/ganesh.png',
       description: '.Net Full Stack Developer',
     },
     {
-      name: 'Vineeth',
+      name: 'Vineeth Pradeep',
       image: 'assets/img/gallery/vineeth.png',
       description: 'Design Architect',
     },
     {
-      name: 'RajaManikkam',
+      name: 'Raja Manikkam',
       image: 'assets/img/gallery/raja.png',
       description: 'Software Architect',
     },
