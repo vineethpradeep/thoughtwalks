@@ -21,6 +21,11 @@ export class TeamComponent {
       image: 'assets/img/gallery/sabari.png',
       description: '.Net Full Stack Developer',
     },
+    // {
+    //   name: 'Ganesh Premnath',
+    //   image: 'assets/img/gallery/ganesh.png',
+    //   description: 'DevOps Architect',
+    // },
     {
       name: 'Raja Manikkam',
       image: 'assets/img/gallery/raja.png',
